@@ -1,0 +1,43 @@
+<div flex="33">
+    <md-toolbar class="md-hue-2">
+        <h3 align="center">Movie Voter - Results</h3>
+        <button ng-click="global.logOut()" style="display:none">Logout</button>
+    </md-toolbar>
+</div>
+<div align="center">
+    <h3>Number of Logged User: {{loggedNumber.length}}</h3>
+</div>
+<pre>
+	
+	
+</pre>
+<md-chips>
+  
+    <md-chip ng-repeat="users in loggedNumber">{{users.name}}</md-chip>
+   
+</md-chips>
+<div layout ="row">
+<div ng-repeat="movie in movies | orderBy : '-number'">
+    <!-- <md-card md-theme="{{ showDarkTheme ? 'dark-orange' : 'default' }}" md-theme-watch>
+    <img ng-src="{{movie.image}}" class="md-card-image" alt="Washed Out">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{movie._id}}</span>
+                <span class="md-subhead">{{movie.number}}</span>
+            </md-card-title-text>
+        </md-card-title>
+       
+    </md-card> -->
+   <!--  {{movie._id}} - {{movie.number}}
+    <img src="{{movie.image}}"> -->
+    <md-card flex="18" flex-sm="80" flex-xs="100">
+        <img ng-src="{{movie.image}}" class="md-card-image" alt="{{movie._id}}" style="max-height: 250px">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{movie._id}}</span>
+                <span class="md-subhead">{{movie.number}}</span>
+            </md-card-title-text>
+        </md-card-title>
+    </md-card>
+</div>
+</div>

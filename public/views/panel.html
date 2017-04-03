@@ -1,0 +1,26 @@
+<div flex="33" >
+    <md-toolbar class="md-hue-2">
+        <h3 align="center">Movie Voter</h3>
+        <button ng-click="global.logOut()" style="display:none">Logout</button>
+    </md-toolbar>
+</div>
+<div layout="row" flex>
+    
+</div>
+<div layout="row" flex layout-wrap layout-align="center">
+    <md-card flex="18" flex-sm="80" flex-xs="100" ng-repeat="movie in movies">
+        <img ng-src="{{movie.image}}" class="md-card-image" alt="{{movie._id}}">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline"></span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content layout-align="center">
+            {{movie.title}}
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center">
+            <md-button ng-click="voteMovie(movie.title)" class="md-raised md-primary" >Vote For This Movie</md-button>
+        </md-card-actions>
+    </md-card>
+
+</div>

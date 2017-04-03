@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <link defer rel="stylesheet" href="css/font-awesome.min.css" />
+   <base href="/">
+    <style>
+        body {
+            overflow-y: hidden !important;
+        }
+    </style>
+</head>
+</head>
+
+<body layout="column" ng-app="myapp" ng-cloak>
+
+    <md-content ng-view flex  ></md-content>
+    <footer>
+        <div layout="row" layout-align="center center" border-style="solid">
+            <h3> Zenways IO (OPC) Pvt Ltd</h3>
+        </div>
+    </footer>
+   
+    <script src="//apis.google.com/js/platform.js" async defer></script>
+    <script src="socket.io/socket.io.js"></script>
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-animate.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-aria.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular-messages.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="js/fb_connect.js"></script>
+    <script src="js/gplus_connect.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/components.js"></script>
+    <script src="controllers/landing.js"></script>
+    <script src="controllers/votingpanel.js"></script>
+    <script src="controllers/results.js"></script>
+    <script src="controllers/admin.js"></script>
+</body>
+
+</html>
